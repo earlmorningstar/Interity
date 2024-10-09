@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* NAVBAR SECTION---  */
+
+.pageLogo {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  text-decoration: none;
+  color: #424242;
+}
+
+.link-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 29px 95px;
+}
+
+.navlinks {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.navlinks > span {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.navlinks > span:hover {
+  font-size: 24px;
+}
+
+.signIn-dropdown-parent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.signIn-dropdown-parent > button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  border-radius: 72px;
+  border: 1px soild #333333;
+  padding: 5px 15px;
+  background-color: transparent;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  display: none;
+  padding-top: 6px;
+}
+
+.navlist-dropdownMenu {
+  background: linear-gradient(860deg, #ffffff 5%, #ececec 95%);
+  color: #333333;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 25rem;
+  top: 100px;
+  right: 0;
+  animation: slideInFromTop 0.5s ease-in-out forwards;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToTop {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.navlist-dropdownMenu.closing {
+  animation: slideOutToTop 0.5s ease-in-out forwards;
+}
+
+.navlist-dropdownMenu.closing {
+  transition: max-height 0.5s ease-out;
+}
+
+.navlist-dropdown-items {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.navlist-dropdown-items > span {
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navlist-dropdown-items > span:hover {
+  font-size: 20px;
+}
+
+/* HERO SECTION---  */
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-image > img {
+  object-fit: cover;
+  object-fit: fill;
+  max-width: 100%;
+  max-height: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-container span {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000000;
+}
+
+.hero-container span h2 {
+  width: 1024px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.hero-container span h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.38px;
+  margin-bottom: 20px;
+}
+
+.hero-container span button {
+  cursor: pointer;
+  background-color: #465138;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  border: none;
+  border-radius: 9px;
+  padding: 10px;
+}
+
+/* EXPLORE SECTION--- */
+
+.explore-mainContainer {
+  font-family: "Montserrat", sans-serif;
+  padding: 3rem 95px;
+}
+
+.explore-mainContainer h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.explore-mainContainer h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+.image-container {
+  margin-top: 3rem;
+  display: flex;
+  gap: 20px;
+}
+
+.image-container span {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.image-container span p {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+.image-container span img {
+  width: 100%;
+  height: 100%;
+}
+
+/* MEDIA QUERIES--- */
+
+@media screen and (max-width: 1045px) {
+  .hamburger-menu {
+    display: block;
+  }
+  .navlinks {
+    display: none;
+  }
+  .hero-container span {
+    top: 30%;
+  }
+
+  .hero-container span h2 {
+    width: 750px;
+    font-size: 40px;
+    line-height: 50.52px;
+    margin-bottom: 10px;
+  }
+  .explore-mainContainer h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .explore-mainContainer h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .link-section {
+    padding: 29px 40px;
+  }
+  .explore-mainContainer {
+    padding: 3rem 40px;
+  }
+
+  .hero-container span {
+    top: 27%;
+  }
+  .hero-container span h2 {
+    width: 550px;
+  }
+  .hero-container span button {
+    font-size: 18px;
+  }
+  .explore-mainContainer h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .image-container span p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-container span {
+    top: 30%;
+  }
+  .hero-container span h2 {
+    width: 450px;
+    line-height: 50.52px;
+    margin-bottom: 5px;
+  }
+
+  .hero-container span h4 {
+    margin-bottom: 10px;
+  }
+  .hero-container span button {
+    font-size: 16px;
+    padding: 8px;
+  }
+  .explore-mainContainer h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .image-container span p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-container span {
+    top: 25%;
+  }
+  .hero-container span h2 {
+    font-size: 28px;
+    line-height: 37.52px;
+  }
+
+  .hero-container span h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .hero-container span button {
+    font-size: 15px;
+    padding: 7px;
+  }
+  .explore-mainContainer h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .explore-mainContainer h4 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .explore-mainContainer {
+    padding: 3rem 25px;
+  }
+  .image-container span p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .hero-container span {
+    top: 28%;
+  }
+  .hero-container span h2 {
+    width: 350px;
+  }
+  .explore-mainContainer h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .explore-mainContainer h4 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .image-container span p {
+    font-size: 15px;
+  }
+}
