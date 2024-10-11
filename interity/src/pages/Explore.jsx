@@ -14,7 +14,7 @@ function Explore() {
         designed to elevate your living space.
       </h4>
 
-      <div className="image-container">
+      <div className="explore-image-container">
         {imagePaths.map((imagePaths, index) => (
           <span key={index}>
             <img src={imagePaths} alt={labels[index]} />

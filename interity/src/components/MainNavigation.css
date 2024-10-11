@@ -3,4 +3,7 @@
 .navbar {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(460deg, #ffffff 15%, #ececec 80%);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
