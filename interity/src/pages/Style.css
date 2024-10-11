@@ -140,7 +140,6 @@
 }
 
 .hero-image > img {
-  object-fit: cover;
   object-fit: fill;
   max-width: 100%;
   max-height: auto;
@@ -232,6 +231,341 @@
   height: 100%;
 }
 
+/* DISCOVER SECTION--- */
+
+.discover-container {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(360deg, #ffffff 25%, #ececec 70%);
+  padding: 4rem 95px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.discover-container > h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.discover-container span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discover-container span button {
+  cursor: pointer;
+  background-color: #465138;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  border-radius: 9px;
+  padding: 10px;
+}
+
+.discover-container span h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.labels-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.product-card img {
+  height: auto;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+  background: rgba(246, 246, 246, 0.66);
+  position: absolute;
+  bottom: 0;
+}
+
+.product-title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0;
+}
+
+.prod-desc-price-flex {
+  display: flex;
+  gap: 20px;
+}
+
+.product-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 8px 0;
+  color: rgba(43, 43, 43, 1);
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 33px;
+}
+
+/* DESIGN DREAMS SECTION---*/
+
+.designDream-maincontainer {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding: 4rem 95px;
+}
+
+.designDream-info-parent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  padding: 5rem 0 0 0;
+}
+
+.designDream-info-parent > h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 50px;
+}
+
+.designDream-info-parent > p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.designDream-info-parent > button {
+  cursor: pointer;
+  background-color: #465138;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  border: none;
+  border-radius: 9px;
+  padding: 10px;
+  width: fit-content;
+}
+
+.design-b2-container {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+}
+
+.design-image-container {
+  max-height: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.design-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.design-info {
+  position: absolute;
+  padding: 15px;
+  background: rgba(246, 246, 246, 0.66);
+  bottom: 0;
+}
+
+/* SHARE SETUP SECTION--  */
+
+.sharesetup-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+  padding: 4rem 95px;
+}
+
+.sharesetup-container span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sharesetup-container span p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #616161;
+}
+
+.sharesetup-container span h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #3a3a3a;
+}
+
+.setup-image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.setup-image {
+  height: 100%;
+}
+
+.setup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.setup-image-flex {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+.setup-image-flex span {
+  width: 50%;
+}
+
+.setup-image-flex img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SUBSCRIPTION SECTION -- */
+
+.subscription-container {
+  font-family: "Montserrat", sans-serif;
+  padding: 4rem 95px;
+  color: #ffffff;
+}
+
+.subscription-container div {
+  background-color: #465138;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding: 4rem 7rem;
+  border-radius: 32px;
+}
+
+.subscription-container div h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 30px;
+}
+
+.subscription-container div p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.sub-btn-parent {
+  display: flex;
+  gap: 15px;
+}
+
+.sub-btn-parent input {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: transparent;
+  width: 400px;
+}
+
+.sub-btn-parent input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.sub-btn-parent button {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #465138;
+}
+
+/* FOOTER SECTION -- */
+
+.footer-container {
+  font-family: "Poppins", sans-serif;
+  padding: 4rem 95px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 40px;
+  border-top: 2px solid #e6e4e4;
+  border-bottom: 2px solid #e6e4e4;
+}
+.footer-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-container div span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9f9f9f;
+  margin-bottom: 30px;
+}
+
+.footer-container div p {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#footer-logo {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#footer-addy {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 200px;
+}
+
 /* MEDIA QUERIES--- */
 
 @media screen and (max-width: 1045px) {
@@ -244,7 +578,6 @@
   .hero-container span {
     top: 30%;
   }
-
   .hero-container span h2 {
     width: 750px;
     font-size: 40px;
@@ -259,6 +592,28 @@
   .explore-mainContainer h4 {
     font-size: 18px;
     line-height: 20px;
+  }
+  .discover-container span h2 {
+    font-size: 35px;
+  }
+  .designDream-maincontainer {
+    padding-top: 2rem;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .designDream-info-parent {
+    width: 100%;
+    padding-top: 0;
+  }
+  .design-b2-container {
+    gap: 10px;
+    width: 100%;
+  }
+  .designDream-info-parent > h2 {
+    font-size: 35px;
+  }
+  .subscription-container div h3 {
+    font-size: 32px;
   }
 }
 
@@ -287,6 +642,42 @@
     font-size: 25px;
     line-height: 35px;
   }
+  .discover-container {
+    padding: 4rem 40px;
+  }
+  .discover-container span h2 {
+    font-size: 30px;
+  }
+  .labels-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .designDream-maincontainer {
+    padding: 2rem 40px 4rem 40px;
+  }
+  .designDream-info-parent > h2 {
+    font-size: 30px;
+  }
+  .sharesetup-container {
+    padding: 4rem 40px;
+  }
+  .subscription-container {
+    padding: 4rem 40px;
+  }
+  .subscription-container div h3 {
+    font-size: 30px;
+  }
+  .subscription-container div {
+    padding: 4rem 4rem;
+  }
+  .sub-btn-parent input {
+    width: 300px;
+  }
+  .footer-container {
+    padding: 4rem 40px;
+  }
+  #footer-addy {
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -312,6 +703,28 @@
   }
   .image-container span p {
     font-size: 20px;
+  }
+
+  .discover-container span button {
+    font-size: 15px;
+  }
+  .discover-container span h2 {
+    font-size: 25px;
+  }
+  .designDream-info-parent > h2 {
+    font-size: 25px;
+  }
+  .sub-btn-parent input {
+    width: 250px;
+  }
+  .subscription-container div {
+    padding: 3rem 2rem;
+  }
+  .subscription-container div h3 {
+    font-size: 25px;
+  }
+  #footer-addy {
+    width: 120px;
   }
 }
 
@@ -343,8 +756,39 @@
   .explore-mainContainer {
     padding: 3rem 25px;
   }
+  .discover-container {
+    padding: 4rem 25px;
+  }
   .image-container span p {
     font-size: 18px;
+  }
+  .discover-container span button {
+    padding: 7px;
+  }
+  .discover-container span h2 {
+    font-size: 20px;
+  }
+  .designDream-maincontainer {
+    padding: 2rem 25px 4rem 25px;
+  }
+  .sharesetup-container {
+    padding: 4rem 25px;
+  }
+  .subscription-container {
+    padding: 4rem 25px;
+  }
+  .sub-btn-parent input {
+    width: 200px;
+  }
+  .subscription-container div {
+    padding: 3rem 1rem;
+  }
+  .footer-container {
+    padding: 4rem 25px;
+    gap: 20px;
+  }
+  .footer-container div p {
+    font-size: 12px;
   }
 }
 
@@ -365,5 +809,18 @@
   }
   .image-container span p {
     font-size: 15px;
+  }
+  .discover-container span {
+    flex-direction: column;
+  }
+  .discover-container span button {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .discover-container span h2 {
+    font-size: 20px;
+  }
+  .subscription-container div h3 {
+    font-size: 22px;
   }
 }
