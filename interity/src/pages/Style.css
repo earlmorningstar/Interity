@@ -73,12 +73,11 @@
   position: fixed;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 50%;
+  width: 40%;
   height: 100%;
   top: 99px;
   right: 0;
   animation: slideInFromTop 0.5s ease-in-out forwards;
-  /* max-height: 70vh; */
   overflow-y: auto;
   z-index: 9999;
 }
@@ -166,6 +165,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: #000000;
+  margin-top: 35px;
 }
 
 .hero-container span h2 {
@@ -624,6 +624,7 @@
   }
   .designDream-info-parent > h2 {
     font-size: 35px;
+    line-height: 30px;
   }
   .subscription-container div h3 {
     font-size: 32px;
@@ -748,6 +749,7 @@
   }
   .designDream-info-parent > h2 {
     font-size: 25px;
+    line-height: 20px;
   }
   .sub-btn-parent {
     gap: 10px;
@@ -814,7 +816,7 @@
     padding: 2rem 25px 4rem 25px;
   }
   .designDream-info-parent > h2 {
-    font-size: 23px;
+    font-size: 20px;
   }
   .designDream-info-parent > p {
     font-size: 17px;

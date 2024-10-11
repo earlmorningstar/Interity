@@ -20,7 +20,7 @@ function Footer() {
           <p>Payment Options</p>
           <p>Returns</p>
           <p>Privacy Policy</p>
-          <p>Others Info</p>
+          <p>Other Info</p>
         </div>
       </section>
     </>
