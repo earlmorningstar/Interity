@@ -21,7 +21,8 @@ function Footer() {
           <p>Returns</p>
           <p>Privacy Policy</p>
           <p>Other Info</p>
-        </div>
+        </div> 
+        <div className="rights">©2024 Joelinton, Inc. (Earl Morningstar). All Rights Reserved.</div>
       </section>
     </>
   );
